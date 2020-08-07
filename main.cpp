@@ -68,7 +68,7 @@ public:
         if(areYouDead())
             std::cout << name << " Dead" << '\n' << std::endl;
     }
-    void ReadBook()
+    void readBook()
     {
         brainLevel = brainLevel + 1;
         sportLevel = sportLevel -1;
@@ -77,7 +77,7 @@ public:
             std::cout << name << " Dead" << '\n' << std::endl;
     }
 
-    void SmokeWeed()
+    void watchFilm()
     {
         happyLevel = happyLevel + 3;
         sportLevel = sportLevel -1;
@@ -168,8 +168,8 @@ int main() {
     Human Marina(45,3,'F', "Marina");
     Leonid.PrintAllParams();
     Leonid.runAround();
-    Leonid.ReadBook();
-    Leonid.SmokeWeed();
+    Leonid.readBook();
+    Leonid.watchFilm();
     Leonid.PrintAllParams();
 
     Marina.addNewProblem("Headache");
