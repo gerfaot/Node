@@ -64,7 +64,7 @@ public:
     {
         brainLevel = brainLevel - 1;
         sportLevel = sportLevel + 3;
-        std::cout << name << " Run a mile" << '\n' << std::endl;
+        std::cout << name << " run a mile" << '\n' << std::endl;
         if(areYouDead())
             std::cout << name << " Dead" << '\n' << std::endl;
     }
@@ -82,7 +82,7 @@ public:
         happyLevel = happyLevel + 3;
         sportLevel = sportLevel -1;
         brainLevel = brainLevel -1;
-        std::cout << name << " smoke some weed!" << '\n' << std::endl;
+        std::cout << name << " watched a film" << '\n' << std::endl;
         if(areYouDead())
             std::cout << name << " Dead" << '\n' << std::endl;
     }
@@ -118,7 +118,7 @@ public:
 
     void deleteProblem(char * delProblem)
     {
-        node * temp = problems;
+
         node * killp;
         if(problems -> problem == delProblem)
         {
@@ -128,17 +128,17 @@ public:
             delete killp;
             return;
         }
-        while (temp != nullptr)
+        while (problems != nullptr)
         {
-            if (temp -> problem == delProblem)
+            if (problems -> problem == delProblem)
             {
                 std::cout << "problem " << delProblem << " deleted" << '\n' << std::endl;
-                killp = temp;
-                temp = temp -> next;
+                killp = problems;
+                problems = problems -> next;
                 delete killp;
             }
             else
-                temp = temp -> next;
+                problems = problems -> next;
 
         }
     }
