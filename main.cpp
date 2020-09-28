@@ -178,7 +178,7 @@ int main() {
 
     Nina.addNewProblem("TooBusy");
     Nina.addNewProblem("WantSleep");
-    Nina.addNewProblem("Drank");
+    Nina.addNewProblem("Tired");
 
 
     Nina.deleteProblem("TooBusy");
